@@ -1,4 +1,4 @@
-for num in range(1, 11):
+'''for num in range(1, 11):
     print(num, end=' ')
 print()
 
@@ -120,3 +120,29 @@ cb.saldo = int(input('Digite o seu saldo: R$'))
 print(f'Olá, {cb.nome}, N° {cb.num}!\nSeu saldo atual é R${cb.saldo}.')
 cb.deposito()
 cb.saque()
+
+entrada = input('Frse: ')
+print(entrada[::-1])
+
+notas = list(map(int, input().split()))
+media = sum(notas)/len(notas)
+print(f'Média = {media:.2f}\nNúmeros menores que a média:')
+for nota in notas:
+    if nota < media:
+        print(nota)
+print('Números maiores que a média ou iguais a ela:')
+for nota in notas:
+    if nota >= media:
+        print(nota)
+
+for num in range(1, 11):
+    print(f'\nTabuada de {num}')
+    for mult in range(1, 11):
+        print(f'{num} x {mult} = {num*mult}')
+
+num = 1
+while num <= 10:
+    print(f'\nTabuada de {num}')
+    for numero in range(1, 10):
+        print(f'{num} x {mult} = {num*mult}')
+        num += 1'''
